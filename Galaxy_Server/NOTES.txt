@@ -1,0 +1,5 @@
+To start ngrok tunnel ,
+
+ngrok http 7000 --url yak-upright-urgently.ngrok-free.app
+
+7000 - our nodejs server running on 7000 port.

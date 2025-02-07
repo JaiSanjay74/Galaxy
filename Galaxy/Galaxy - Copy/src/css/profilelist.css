@@ -1,0 +1,65 @@
+
+@import url("../res/RobotoFont.css");
+
+.proflist{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.proflist::-webkit-scrollbar{
+    width: 2.5px;
+}
+.proflist::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background-color: rgb(236, 236, 236);
+}
+.proflist::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: rgb(206, 206, 206);
+}
+.proflist .tit{
+    font-family: rob-bld;
+    color: rgb(62, 62, 62);
+    font-size: 1.10rem;
+    margin-bottom: 10px;
+}
+.proflist .tit + b{
+    font-family: rob-bld;
+    color: rgb(187, 187, 187);
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 20px;
+}
+.proflist .prof{
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+.proflist .prof:hover{
+    background-color: rgb(243, 243, 243);
+}
+.proflist img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    margin-right: 7px;
+}
+.proflist .prof div b{
+    display: block;
+}
+.proflist .prof div b:nth-child(1){
+    font-family: rob-bld;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: rgb(50, 50, 50);
+}
+.proflist .prof div b:nth-child(2){
+    font-family: rob-lt;
+    font-size: 0.90rem;
+    color: rgb(147, 147, 147);
+}

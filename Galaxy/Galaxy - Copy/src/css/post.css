@@ -1,0 +1,75 @@
+@import url("../res/RobotoFont.css");
+
+.post {
+    margin-top: 15px;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.5s background-color;
+}
+.post:hover{
+    background-color: rgb(243, 243, 243);
+}
+.post .account{
+   display: flex;
+   align-items: center;
+}
+.post .account div:nth-child(1){
+    height: 40px;
+    width: 40px;
+    background-image: linear-gradient(to bottom,rgb(254, 0, 59),blue);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.post .account img{
+    height: 35px;
+    width: 35px;
+    border-radius:50px;
+}
+.post .account div b{
+    display: block;
+}
+.post .account div b:nth-child(1){
+    font-size: 1rem;
+    font-family: rob-bld;
+    color: rgb(28, 28, 28);
+}
+.post .account div b:nth-child(2){
+    font-size: 0.80rem;
+    font-family: rob-bld;
+    color: rgb(169, 169, 169);
+}
+.post .msg{
+    margin-top: 10px;
+    max-height: 200px;
+    font-size: 0.90rem;
+    font-weight: 600;
+    word-break: break-word;
+    overflow-y: hidden;
+    font-family: rob-lt;
+    color: rgb(34, 34, 34);
+}
+.post .opt{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+.post .opt i{
+    font-size: 1rem;
+    color: rgb(126, 126, 126);
+    cursor: pointer;
+    font-weight: 300;
+}
+.post .opt i::before{
+    margin-right: 10px;
+}
+.post .opt i:hover{
+    color: blue;
+}
+
+.post .opt .true{
+    color: blue;
+}

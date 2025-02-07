@@ -1,0 +1,270 @@
+@import url("../res/RobotoFont.css");
+.app{
+    width: 80%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid greenyellow;
+    position: relative; 
+}
+.app  div:nth-child(1).a1 #logo{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+.app  div:nth-child(1).a1 b{
+    font-family: rob-bld;
+    color: rgb(54, 54, 54);
+    font-size: 1.60rem;
+}
+.app  div:nth-child(1).a1 input{
+    margin-left: 10px;
+    flex-grow: 1;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background-color: rgba(240, 240, 240, 0.867);
+    color: rgb(124, 124, 124);
+    font-size: 1.04rem;
+    font-family: rob-md;
+    padding: 10px;
+}
+.app  div:nth-child(1).a1 input::placeholder{
+    color: rgb(134, 134, 134);
+}
+.app div:nth-child(1).a1 .fa-magnifying-glass{
+    color: rgb(40, 40, 40);
+    font-size: 1.40rem;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.app div:nth-child(1).a1 .fa-magnifying-glass:hover{
+    color: rgb(2, 76, 215);
+}
+.app  div:nth-child(1).a1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.app div:nth-child(2).a2{
+    display: flex;
+    height: calc(100% - 60px);
+}
+/* sidebar */
+.app nav{
+    width: 230px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.app nav section{
+   display: flex;
+   color: rgb(72, 72, 72);
+   font-size: 1.10rem;
+   padding: 10px;
+   border-radius: 10px;
+   cursor: pointer;
+   transition: 0.6s background-color;
+   margin-top: 10px;
+}
+.app nav section:hover{
+    color: rgb(49, 15, 246);
+    background-color: rgba(232, 232, 232, 0.823);
+}
+.app nav section i{
+    width: 20px;
+}
+.app nav section b{
+    font-family: rob-bld;
+    margin-left: 13px;
+    font-size: 1.10rem;
+}
+.app nav .account{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(235, 235, 235);
+    overflow-x: hidden;
+}
+.app nav .account img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    margin-right: 7px;
+}
+.app nav .account div{
+    width: calc(100% - 57px);
+    display: flex;
+    flex-direction: column;
+}
+.app nav .account b:nth-child(1){
+    font-family: rob-bld;
+    color: rgb(38, 38, 38);
+    font-size: 1rem;
+    margin-bottom: 7px;
+    word-break: break-all;
+}
+.app nav .account b:nth-child(2){
+    font-family: rob-lt;
+    color: rgb(142, 142, 142);
+    font-size: 0.90rem;
+    margin-bottom: 7px;
+}
+
+.app div:nth-child(2).a2 .screen{
+    position: relative;
+    width: calc(100% - 230px);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* for add post common button */
+.app #adpst{
+    position: absolute;
+    right: 15px;
+    bottom: 70px;
+    height: 50px;
+    width: 100px;
+    background-color: blue;
+    font-size: 1.20rem;
+    border-radius: 50px;
+    border: none;
+    padding: 7px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s background-color;
+}
+.app #adpst span{
+    margin-right: 10px;
+}
+.app #adpst:hover{
+    background-color: rgb(2, 2, 150);
+}
+@media(max-width:930px){
+    .app div:nth-child(1).a1{
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+        margin-top: 10px !important
+        ;
+    }
+    .app div:nth-child(2).a2{
+        flex-direction: column-reverse;
+        height: calc(100% - (30.4px + 20px));
+    }
+    .app div:nth-child(2).a2 .screen{
+        height: calc(100% - 54px);
+        width: 100%;
+    }
+
+    /* complete sidebar mmodification */
+    .app nav .account {
+        display: none;
+    }
+    .app nav{
+        padding: 5px;
+        box-sizing: border-box;
+        height: fit-content;
+        width: 100%;
+        align-items: center;
+    }
+    .app nav div{
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        justify-content: space-around;
+    }
+    .app nav section{
+        margin-top: 0px;
+    }
+    .app nav section i{
+        font-size: 1rem;
+        width: fit-content;
+    }
+    .app nav section b{
+        display: none;
+    }
+    .app{
+       padding: 5px;
+    }
+  
+}
+
+@media(max-width:610px){
+    .app #adpst{
+        position: fixed;
+    }
+    .app{
+        width: 100%;
+        position: static;
+    }
+    .app nav div{
+        align-items: center;
+        width: 100%;
+    }
+}
+
+/* for whole app message */
+.app .mmsg{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    top: 90px;
+    left: 0px;
+}
+.app .mmsg div{
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgb(54, 54, 54);
+    color: rgb(209, 209, 209);
+    font-family: rob-bld;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.app .mmsg div .er{
+    color: red;
+    margin-right: 10px;
+}
+.app .mmsg div .suc{
+    color: rgb(0, 166, 58);
+    margin-right: 10px;
+}
+
+/* for home message */
+/* for whole app message */
+.home .mmsg{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    top: 90px;
+    left: 0px;
+}
+.home .mmsg div{
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgb(54, 54, 54);
+    color: rgb(209, 209, 209);
+    font-family: rob-bld;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.home .mmsg div .er{
+    color: red;
+    margin-right: 10px;
+}
+.home .mmsg div .suc{
+    color: rgb(0, 166, 58);
+    margin-right: 10px;
+}

@@ -1,0 +1,103 @@
+@import url("../res/RobotoFont.css");
+.profinfo{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+.profinfo .pimg{
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background-color: rgb(0, 89, 255);
+}
+
+.profinfo .pimg img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    border: 2px solid white;
+}
+.profinfo .pdetails{
+    display: flex;
+    flex-direction: column;
+}
+.profinfo .pdetails b:nth-child(1){
+    font-size:2.40rem;
+    color: black;
+    font-family: rob-bld;
+    text-align: center;
+    margin-top: 15px;
+}
+.profinfo .pdetails b:nth-child(2){
+    font-size: 1.25rem;
+    color: rgb(121, 121, 121);
+    font-family: rob-bld;
+    text-align: center;
+    margin-top: 15px;
+}
+.profinfo .pdetails b:nth-child(3){
+    font-size: 1.20rem;
+    color: rgb(255, 0, 72);
+    font-family: rob-bld;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.profinfo .opt{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.profinfo .opt b i{
+    margin-right: 7px;
+}
+.profinfo .opt b:nth-child(1){
+    text-align: center;
+    color: rgb(0, 38, 255);
+    font-size: 1.20rem;
+    font-family: rob-bld;
+    padding: 8px;
+    border: 1.90px solid rgb(0, 38, 255);
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.5s background-color;
+}
+.profinfo .opt b:nth-child(1):hover{
+    color: white;
+    background-color: rgb(0, 38, 255);
+}
+
+.profinfo .opt b:nth-child(2){
+    margin-top: 15px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 1.10rem;
+    font-family: rob-bld;
+    padding: 8px;
+    background-color: rgb(0, 38, 255);
+    border: 1.90px solid rgb(0, 38, 255);
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.5s background-color;
+}
+.profinfo .opt b:nth-child(2):hover{
+    color: rgb(3, 58, 255);
+    background-color: rgb(255, 255, 255);
+} 
+.profinfo .pdetails b:nth-child(4){
+    margin-top: 15px;
+    text-align: center;
+    color: rgb(159, 159, 159);
+    font-size: 1rem;
+    font-family: rob-bld;
+}
+.profinfo .pdetails b:nth-child(4) span:nth-child(2){
+    color: rgb(0, 115, 255);
+}
+.profinfo .pdetails b:nth-child(4) span:nth-child(1){
+    margin-right: 10px;
+    color: rgb(128, 0, 255);
+}

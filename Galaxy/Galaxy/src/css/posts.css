@@ -1,0 +1,44 @@
+@import url("../res/RobotoFont.css");
+.posts{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.posts::-webkit-scrollbar{
+    width: 2.5px;
+}
+.posts::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background-color: rgb(236, 236, 236);
+}
+.posts::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: rgb(206, 206, 206);
+}
+.posts .tit{
+    font-family:rob-bld;
+    font-size: 1.10rem;
+    color: rgb(40, 40, 40);
+}
+.posts .tit + b{
+    font-family: rob-bld;
+    color: rgb(187, 187, 187);
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 20px;
+}
+.posts .hl{
+    flex-grow: 1;
+    overflow-y: auto;
+}
+.posts .hl::-webkit-scrollbar{
+    width: 2.5px;
+}
+.posts .hl::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background-color: rgb(236, 236, 236);
+}
+.posts .hl::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: rgb(206, 206, 206);
+}

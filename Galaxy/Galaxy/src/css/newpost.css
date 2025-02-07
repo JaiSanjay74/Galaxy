@@ -1,0 +1,68 @@
+.newpost{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.newpost .head {
+    font-size: 1.50rem;
+    color: rgb(48, 48, 48);
+    font-family: rob-bld;
+}
+.newpost .head i{
+    margin-right: 15px;
+    cursor: pointer;
+}
+.newpost .head i:hover{
+    color: blue;
+}
+.newpost textarea{
+    resize: none;
+    height: 300px !important;
+    width: 100% !important;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: rgb(247, 247, 247);
+    color: rgb(91, 91, 91);
+    font-size: 1rem;
+    font-family: rob-bld;
+    margin-top: 25px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    
+}
+.newpost textarea::placeholder{
+    color: rgb(195, 195, 195);
+}
+.newpost textarea::-webkit-scrollbar{
+    width: 2.5px;
+}
+.newpost textarea::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background-color: rgb(236, 236, 236);
+}
+.newpost textarea::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: rgb(206, 206, 206);
+}
+.newpost button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: rgb(0, 4, 255);
+    font-size: 1.10rem;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.5s background-color;
+}
+.newpost button span{
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+.newpost button:hover{
+    background-color: blueviolet;
+}

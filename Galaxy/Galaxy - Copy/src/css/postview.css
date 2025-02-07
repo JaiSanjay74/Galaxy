@@ -1,0 +1,149 @@
+@import url("../res/RobotoFont.css");
+
+.postview {
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.5s background-color;
+    height: 100%;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.postview::-webkit-scrollbar{
+    width: 2.5px;
+}
+.postview::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background-color: rgb(236, 236, 236);
+}
+.postview::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: rgb(206, 206, 206);
+}
+
+.postview .account{
+   display: flex;
+   align-items: center;
+}
+.postview .account .fa-arrow-left{
+    font-size: 1.10rem;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.postview .account .fa-arrow-left:hover{
+    color: blue;
+}
+.postview .account div:nth-of-type(1){
+    height: 40px;
+    width: 40px;
+    background-image: linear-gradient(to bottom,rgb(254, 0, 59),blue);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.postview .account img{
+    height: 35px;
+    width: 35px;
+    border-radius:50px;
+}
+.postview .account div b{
+    display: block;
+}
+.postview .account div b:nth-child(1){
+    font-size: 1rem;
+    font-family: rob-bld;
+    color: rgb(28, 28, 28);
+}
+.postview .account div b:nth-child(2){
+    font-size: 0.80rem;
+    font-family: rob-bld;
+    color: rgb(169, 169, 169);
+}
+.postview .msg{
+    margin-top: 10px;
+    max-height: 200px;
+    font-size: 0.90rem;
+    font-weight: 600;
+    word-break: break-word;
+    overflow-y: hidden;
+    font-family: rob-lt;
+    color: rgb(34, 34, 34);
+}
+.postview .opt{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+.postview .opt i{
+    font-size: 1rem;
+    color: rgb(126, 126, 126);
+    cursor: pointer;
+    font-weight: 300;
+}
+.postview .opt i::before{
+    margin-right: 10px;
+}
+.postview .opt i:hover{
+    color: blue;
+}
+
+.postview .rtit{
+    font-size: 1.10rem;
+    color: rgb(40, 40, 40);
+    font-family: rob-bld;
+    margin-top: 25px;
+    display: block;
+}
+.postview .reply{
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.postview .reply textarea{
+    border: none;
+    outline: none;
+    background-color: rgba(240, 240, 240, 0.766);
+    color: rgb(36, 69, 93);
+    font-family: rob-bld;
+    font-size: 1rem;
+    border-radius: 10px;
+    padding: 10px;
+    resize: none;
+    height: 100px;
+}
+.postview .reply text::placeholder{
+    color: rgb(140, 140, 140);
+}
+
+.postview .reply textarea::-webkit-scrollbar{
+    width: 2.5px;
+}
+.postview .reply textarea::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background-color: rgb(236, 236, 236);
+}
+.postview .reply textarea::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: rgb(206, 206, 206);
+}
+.postview .reply button{
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.1rem;
+    color: white;
+    background-color: rgb(0, 72, 255);
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.5s background-color;
+}
+.postview .reply button:hover{
+    background-color: rgb(0, 128, 255);
+}
+
+.postview .opt .true{
+    color: blue;
+}

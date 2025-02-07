@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #d{
+            height: 200px;
+            width: 300px;
+            overflow-y: auto;
+            overflow-x: hidden;
+
+           
+        }
+        
+       #d::-webkit-scrollbar{
+    width: 2.5px;
+}
+#d::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background-color: rgb(236, 236, 236);
+}
+#d::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: rgb(206, 206, 206);
+}
+    </style>
+    <div id="d">
+        fffffffffff fffffffffffffffffffffffffffffff fffffffffffffffffffffff
+        fffffffffffffffffffffffff ffffffffffffffffffffffffffffffffffffffffff
+        ffffffffffffffffffffff ffffffffffffffffffffffffffffffffffffffffffffff
+        ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+        ffffff fffffffffffffffffffffffffffff ffffffffffffffffffffffffffffffff
+        ffffffffffffffffffffffffffffffffffffffffffffffffff fffffffffffffffff
+        fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+        fffffffffffffffffffffff ffffffffffffffffffffffffffffffffffffffffffff
+        ffffffffffffffff fffffffffffffffffff fffffffffffffffffffffffffffffffffff
+    </div>
+    <script>
+       let el = document.getElementById("d")
+
+       let ScrollBarHeight = 0
+       let ScrolledAmount = 0
+       let contentSize = 0
+
+       el.addEventListener("scroll",(e)=>{
+        
+           ScrollBarHeight = e.currentTarget.clientHeight
+           ScrolledAmount = e.currentTarget.scrollTop
+           contentSize = e.currentTarget.scrollHeight
+
+           let ThumbSize = 0
+           
+           if(contentSize > ScrollBarHeight){
+                let overflowedSize = contentSize - ScrollBarHeight
+                ThumbSize = ScrollBarHeight - overflowedSize
+                console.log(ScrolledAmount)
+                    console.log(ScrollBarHeight - ThumbSize)
+                if(ScrolledAmount === (ScrollBarHeight - ThumbSize)){
+                    console.log(ScrolledAmount == (ScrollBarHeight - ThumbSize))
+                   console.log(ScrolledAmount)
+                   console.log(ScrollBarHeight - ThumbSize)
+                }
+           }
+       })
+      
+    </script>
+</body>
+</html>

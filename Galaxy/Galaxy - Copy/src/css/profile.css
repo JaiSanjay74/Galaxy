@@ -1,0 +1,140 @@
+@import url("../res/RobotoFont.css");
+
+.profile{
+    height: 100%;
+    display: flex;
+   flex-direction: column;
+   overflow-y: auto;
+}
+.profile::-webkit-scrollbar{
+    width: 2.5px;
+}
+.profile::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background-color: rgb(236, 236, 236);
+}
+.profile::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: rgb(206, 206, 206);
+}
+.profile .primg{
+    background-size: 100% 100%;
+    height: 180px;
+    border-radius: 3.8px;
+    background-image: url("");
+    position: relative;
+}
+.profile .primg img{
+    border-radius: 15px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.profile .primg .ins{
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.profile .primg .ins b{
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    font-family: rob-bld;
+}
+.profile .primg .ins b:nth-of-type(2){
+    color: rgb(249, 0, 116);
+    font-size: 1.20rem;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: rgba(240, 248, 255, 0.745);
+    width: fit-content;
+    align-self: center;
+}
+.profile .primg .ins div{
+    display: flex;
+    justify-content: flex-end;
+}
+.profile .primg .ins div b{
+    margin-right: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(239, 239, 239, 0.362);
+    color: rgb(2, 238, 108);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.5s  background-color,0.5s color  ;
+}
+.profile .primg .ins div b i{
+    margin-right: 7px;
+}
+.profile .primg .ins div b:hover{
+    color: blue;
+    background-color: white;
+}
+
+.profile .info{
+    height: calc(100% - 180px);
+    display: flex;
+    flex-direction: column;
+}
+.profile b{
+    font-family: rob-bld;
+    font-size: 1.10rem;
+    color: rgb(30, 30, 30);
+    margin-top: 10px;
+}
+
+.profile input{
+    font-family: rob-bld;
+    font-size: 1rem;
+    color: rgb(71, 71, 71);
+    margin-top: 10px;
+    border: 2px solid transparent;
+    padding: 10px;
+    background-color: rgb(242, 242, 242);
+    border-radius: 5px;
+    outline: none;
+}
+.profile input:focus{
+   border-color:rgb(57, 57, 255);
+}
+.profile input::placeholder{
+    color: rgb(136, 136, 136);
+}
+
+.profile .spps{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.profile .spps b:nth-child(1){
+    font-family: rob-bld;
+    color: blue;
+    font-size: 1rem;
+}
+.profile .spps b:nth-child(2){
+    font-family: rob-bld;
+    color: rgb(255, 0, 72);
+    font-size: 1rem;
+}
+.profile button{
+    border: none;
+    border-radius: 50px;
+    background-color: blue;
+    color: white;
+    margin-top: 20px;
+    font-size: 1.10rem;
+    font-family: rob-bld;
+    padding: 10px;
+    cursor: pointer;
+    transition:0.5s background-color ;
+}
+.profile button:nth-of-type(2){
+    background-color: red;
+}
+.profile button:hover{
+    background-color: rgb(0, 192, 109);
+}

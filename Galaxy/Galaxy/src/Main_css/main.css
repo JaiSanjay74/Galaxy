@@ -1,0 +1,11 @@
+*{
+  user-select: none;
+}
+body{
+  background-color: rgba(252, 252, 252, 0.847);
+  margin: 0px;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
